@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRJKT TK MERCHANDISE STORE</title>
+  <meta name="description" content="PRJKT TK – Urban streetwear. Tees, hoodies, caps. Kenya-wide delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="bar">Free shipping in Kenya on orders over 6,000 KES • 1–2 day delivery</div>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="top">
+    <a class="logo" href="#home">PRJKT <span>TK</span></a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#size">Size Guide</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#policies">Policies</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <h1 class="title">PRJKT <span>TK</span></h1>
+      <p class="subtitle">Urban staples. Loud energy. Built for Nairobi streets.</p>
+      <div class="cta">
+        <a class="btn btn--primary" href="#shop">Shop Now</a>
+        <a class="btn btn--ghost" href="#about">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <section class="section" id="shop">
+    <div class="section__head">
+      <h2>Shop</h2>
+      <div class="tools">
+        <div class="filters" id="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="tshirt">T‑Shirts</button>
+          <button class="chip" data-filter="hoodie">Hoodies</button>
+          <button class="chip" data-filter="cap">Caps</button>
+        </div>
+        <input id="search" class="search" type="search" placeholder="Search products..." />
+      </div>
+    </div>
+
+    <div id="products" class="grid"></div>
+  </section>
+
+  <!-- Size Guide -->
+  <section class="section alt" id="size">
+    <h2>Size Guide – Unisex Tees</h2>
+    <div class="tablewrap">
+      <table class="table">
+        <thead>
+          <tr><th>Size</th><th>Chest (cm)</th><th>Length (cm)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>XS</td><td>84–89</td><td>64</td></tr>
+          <tr><td>S</td><td>90–95</td><td>67</td></tr>
+          <tr><td>M</td><td>96–101</td><td>70</td></tr>
+          <tr><td>L</td><td>102–109</td><td>73</td></tr>
+          <tr><td>XL</td><td>110–117</td><td>76</td></tr>
+          <tr><td>2XL</td><td>118–125</td><td>79</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Tip: If you're between sizes, size up for an oversized street look.</p>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="about">
+      <div>
+        <h2>About PRJKT TK</h2>
+        <p>PRJKT TK is a Nairobi-born streetwear label blending minimal silhouettes with bold, graffiti-inspired details. We design for motion, music, and hustle — pieces that work day-to-night and stand up to the city.</p>
+        <ul class="bullets">
+          <li>Small-batch drops</li>
+          <li>Kenya-wide delivery</li>
+          <li>Quality cotton blends</li>
+        </ul>
+      </div>
+      <div class="about__card">
+        <h3>Got a collab idea?</h3>
+        <p>We love teaming up with photographers, skaters, and designers.</p>
+        <a class="btn btn--primary" href="#contact">Hit us up</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section alt" id="contact">
+    <h2>Contact</h2>
+    <form class="form" id="contactForm" novalidate>
+      <div class="row">
+        <label>Full Name
+          <input type="text" name="name" required placeholder="Your name" />
+        </label>
+        <label>Email
+          <input type="email" name="email" required placeholder="you@example.com" />
+        </label>
+      </div>
+      <label>Message
+        <textarea name="message" rows="5" required placeholder="Tell us what you need"></textarea>
+      </label>
+      <button class="btn btn--primary" type="submit">Send Message</button>
+      <p id="formMsg" class="form__msg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- Policies -->
+  <section class="section" id="policies">
+    <h2>Shipping & Returns (Kenya)</h2>
+    <div class="policies">
+      <div>
+        <h3>Shipping</h3>
+        <ul>
+          <li><strong>Free shipping</strong> on orders over <strong>6,000 KES</strong>.</li>
+          <li>Delivery: <strong>same day to 1–2 days</strong> depending on location.</li>
+          <li>We currently deliver within <strong>Kenya only</strong>.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Returns</h3>
+        <ul>
+          <li>Return within <strong>3 days</strong> of delivery.</li>
+          <li>Items must be <strong>new, unused</strong>, with original label attached.</li>
+          <li>Refunds issued after inspection within <strong>24 hours</strong>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <a class="logo logo--footer" href="#top">PRJKT <span>TK</span></a>
+        <p>© <span id="year"></span> PRJKT TK MERCHANDISE STORE. All rights reserved.</p>
+      </div>
+      <div class="links">
+        <a href="#policies">Policies</a>
+        <a href="#size">Size Guide</a>
+      </div>
+      <div class="social">
+        <a href="mailto:hello@prjkt-tk.example" aria-label="Email">Email</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
